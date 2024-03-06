@@ -68,8 +68,6 @@ for line in table.index:
 
     # Observações
     obs = str(table.loc[line, "obs"])
-    print(obs)
-    print(pd.isna(obs))
     if obs != "nan":
         pag.write(obs)
     pag.press("tab")
